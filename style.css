@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  background-color: #fdfaf2;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  /* color: #fcfbf7; */
+  color: #4b3800;
+}
+
+.offset:before {
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: '';
+  display: block;
+}
+/*============= NAVBAR =============*/
+
+.navbar {
+  background-color: rgba(248, 245, 237, 0.9) !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #4b3800 !important;
+  padding-top: 0.8rem;
+}
+
+.navbar-light .navbar-nav .nav-link:active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: !important;
+}
+
+/*============= SLIDER =============*/
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #0083a1;
+  background-color: #0083a1;
+  color: white;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #00738d;
+  background-color: #00738d;
+  color: white;
+}
+
+/*============= JUMBOTRON PORTFOLIO SECTION =============*/
+
+.jumbotron {
+  background-color: #e9e0c8 !important;
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+  padding-top: 1rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #00738d;
+  margin: 0 auto 2rem;
+}
+
+/*============= PORTFOLIO IMAGE SECTION =============*/
+
+.portfolio img {
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.row.no-padding [class*='col'] {
+  padding: 0.1rem;
+}
+
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.portfolio {
+  overflow: hidden;
+}
+
+/*============= PORTFOLIO IMAGE SECTION =============*/
+
+.card {
+  margin: 2rem;
+}
+
+/*============= FOOTER SECTION =============*/
+
+.footer-logo {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+
+/*============= CONTACT SECTION =============*/
+
+footer {
+  background-color: #00738d !important;
+  color: #fcfbf7;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+footer a {
+  color: #fcfbf7;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #a2484e;
+}
+
+hr.socket {
+  border-top: 0.2rem solid #a2484e !important;
+  width: 100%;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*============= MEDIA QUERIES =============*/
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+}
