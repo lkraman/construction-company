@@ -7,13 +7,13 @@ body {
   /* color: #fcfbf7; */
   color: #4b3800;
 }
-
+/* 
 .offset:before {
   height: 3.8rem;
   margin-top: -3.8rem;
   content: '';
   display: block;
-}
+} */
 /*============= NAVBAR =============*/
 
 .navbar {
@@ -76,6 +76,25 @@ body {
   border-width: medium;
   border-radius: 0;
   font-size: 1.1rem;
+}
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease, -webkit-transform 1.2s ease;
 }
 
 /*============= COURSE SECTION =============*/
@@ -236,7 +255,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
   }
 }
 
-/*-- Bootstrap Mobile Gutter Fix --*/
+/*--- Extra Bootstrap Column Padding --*/
+[class*='col-'] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
 .row,
 .container-fluid {
   margin-left: 0px !important;
